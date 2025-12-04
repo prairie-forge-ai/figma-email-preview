@@ -1,0 +1,179 @@
+<mjml>
+  <mj-head>
+    <mj-title>Client UI Preview Asset - Interactive Demo</mj-title>
+    <mj-preview>Experience the interactive UI preview with live animations</mj-preview>
+    <mj-style>
+      @keyframes slideIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fadeInOut {
+        0%, 100% { opacity: 1; }
+        45%, 55% { opacity: 0.3; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.6; }
+      }
+      .header-section {
+        animation: slideIn 0.8s ease-out;
+      }
+      .frame-container {
+        animation: fadeInOut 6s ease-in-out infinite;
+      }
+      .cta-button {
+        animation: pulse 2s ease-in-out infinite;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#0f0f23">
+    <!-- HEADER -->
+    <mj-section background-color="#0f0f23" padding="30px 0">
+      <mj-column>
+        <mj-text align="center" color="#f5f5f7" font-size="14px" letter-spacing="2px">
+          PRAIRIE FORGE AI
+        </mj-text>
+        <mj-text align="center" color="#ffffff" font-size="32px" font-weight="bold" padding="20px 0 10px 0">
+          Client UI Preview Asset
+        </mj-text>
+        <mj-text align="center" color="#a0a0b8" font-size="16px" padding="0 20px">
+          Experience our interactive design system with live animations
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ANIMATED PREVIEW SECTION -->
+    <mj-section background-color="#1a1a2e" padding="40px 20px">
+      <mj-column>
+        <!-- Frame Animation Container -->
+        <mj-table background-color="transparent" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="center" style="padding: 20px; background: linear-gradient(135deg, #000000 0%, #0a0a1a 40%, #1a1a3e 100%); border-radius: 16px; min-height: 400px;">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" style="padding: 30px 20px;">
+                    <!-- Frame 1: Static State -->
+                    <div style="animation: fadeInOut 6s ease-in-out infinite; animation-delay: 0s;">
+                      <mj-text color="#ffffff" font-size="24px" font-weight="bold">Frame 1: Static Preview</mj-text>
+                      <mj-text color="#a0a0b8" font-size="14px">Initial UI state loaded and ready</mj-text>
+                      <table border="0" cellpadding="15" cellspacing="0" width="100%" style="background-color: rgba(255,255,255,0.05); border-radius: 8px; margin: 15px 0;">
+                        <tr>
+                          <td align="center">
+                            <mj-text color="#3533cd" font-size="48px">●</mj-text>
+                            <mj-text color="#ffffff" font-size="12px">Ready</mj-text>
+                          </td>
+                          <td align="center">
+                            <mj-text color="#666666" font-size="48px">●</mj-text>
+                            <mj-text color="#666666" font-size="12px">Pending</mj-text>
+                          </td>
+                          <td align="center">
+                            <mj-text color="#666666" font-size="48px">●</mj-text>
+                            <mj-text color="#666666" font-size="12px">Pending</mj-text>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </mj-table>
+
+        <!-- Feature Highlights -->
+        <mj-text align="center" color="#ffffff" font-size="20px" font-weight="bold" padding="40px 0 20px 0">
+          Key Features
+        </mj-text>
+
+        <mj-table border="0" cellpadding="15" cellspacing="0" width="100%">
+          <tr>
+            <td width="33.33%" align="center" style="border-right: 1px solid rgba(255,255,255,0.1);">
+              <mj-text color="#3533cd" font-size="28px">✦</mj-text>
+              <mj-text color="#ffffff" font-size="14px" font-weight="bold">Interactive UI</mj-text>
+              <mj-text color="#a0a0b8" font-size="12px">Dynamic state transitions</mj-text>
+            </td>
+            <td width="33.33%" align="center" style="border-right: 1px solid rgba(255,255,255,0.1);">
+              <mj-text color="#3533cd" font-size="28px">◈</mj-text>
+              <mj-text color="#ffffff" font-size="14px" font-weight="bold">Smooth Animation</mj-text>
+              <mj-text color="#a0a0b8" font-size="12px">Fluid visual feedback</mj-text>
+            </td>
+            <td width="33.33%" align="center">
+              <mj-text color="#3533cd" font-size="28px">◆</mj-text>
+              <mj-text color="#ffffff" font-size="14px" font-weight="bold">Modern Design</mj-text>
+              <mj-text color="#a0a0b8" font-size="12px">Sleek & professional</mj-text>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- NEXT STEPS -->
+    <mj-section background-color="#0f0f23" padding="40px 20px">
+      <mj-column>
+        <mj-text align="center" color="#ffffff" font-size="20px" font-weight="bold" padding="0 0 20px 0">
+          Next Steps
+        </mj-text>
+        
+        <mj-table border="0" cellpadding="20" cellspacing="0" width="100%">
+          <tr>
+            <td align="left" style="background-color: rgba(53, 51, 205, 0.1); border-left: 3px solid #3533cd; border-radius: 4px;">
+              <mj-text color="#ffffff" font-size="14px" font-weight="bold" margin="0">Step 1: Review the Design</mj-text>
+              <mj-text color="#a0a0b8" font-size="12px" margin="0">Explore the interactive preview and UI components</mj-text>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 10px;"></td>
+          </tr>
+          <tr>
+            <td align="left" style="background-color: rgba(53, 51, 205, 0.1); border-left: 3px solid #3533cd; border-radius: 4px;">
+              <mj-text color="#ffffff" font-size="14px" font-weight="bold" margin="0">Step 2: Provide Feedback</mj-text>
+              <mj-text color="#a0a0b8" font-size="12px" margin="0">Share your thoughts and suggestions for improvements</mj-text>
+            </td>
+          </tr>
+          <tr>
+            <td style="height: 10px;"></td>
+          </tr>
+          <tr>
+            <td align="left" style="background-color: rgba(53, 51, 205, 0.1); border-left: 3px solid #3533cd; border-radius: 4px;">
+              <mj-text color="#ffffff" font-size="14px" font-weight="bold" margin="0">Step 3: Move Forward</mj-text>
+              <mj-text color="#a0a0b8" font-size="12px" margin="0">Collaborate on implementation and refinement</mj-text>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA SECTION -->
+    <mj-section background-color="#1a1a2e" padding="40px 20px">
+      <mj-column>
+        <mj-button 
+          background-color="#3533cd"
+          color="#f5f5f7"
+          font-size="16px"
+          font-weight="bold"
+          padding="16px 40px"
+          border-radius="8px"
+          href="https://figma.com/design/MjzTMEeFThD0KV7obJOkzN/Client-UI-Preview-Asset"
+        >
+          View Full Interactive Preview
+        </mj-button>
+        
+        <mj-text align="center" color="#a0a0b8" font-size="12px" padding="20px 0">
+          This email contains CSS animations that work best in modern email clients (Apple Mail, Gmail, Outlook).
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#0f0f23" padding="30px 20px">
+      <mj-column>
+        <mj-text align="center" color="#666666" font-size="11px">
+          Prairie Forge AI | Design & Development
+        </mj-text>
+        <mj-text align="center" color="#555555" font-size="10px" padding="10px 0 0 0">
+          © 2025 Prairie Forge AI. All rights reserved.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
